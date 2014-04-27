@@ -8,6 +8,17 @@
 * Home Page: [http://victorpotasso.com/](http://www.victorpotasso.com)
 * Twitter: [@victorpotasso](https://twitter.com/victorpotasso)
 
+## Requirements
+This projects requires:
+
++ grunt
++ grunt-contrib-jshint
++ grunt-contrib-uglify
++ grunt-contrib-watch
++ grunt-contrib-sass
++ grunt-as3
++ grunt-shell
+
 ## Installation
 
 Clone the git repo - `git clone git://github.com/victorpotasso/as3-starter-kit.git` and then rename the directory to the name of your project. [Install Grunt](http://gruntjs.com/getting-started), and then install the dependencies for AS3 Starter kit contained in `package.json`.
