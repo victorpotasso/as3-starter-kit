@@ -4,9 +4,9 @@
 
 > AS3 Starter Kit is a starter kit. It will help you make better AS3 projects.
 
-* Source: [https://github.com/roots/roots](https://github.com/victorpotasso/as3-starter-kit)
-* Home Page: [http://roots.io/](http://www.victorpotasso.com)
-* Twitter: [@retlehs](https://twitter.com/victorpotasso)
+* Source: [https://github.com/victorpotasso/as3-starter-kit](https://github.com/victorpotasso/as3-starter-kit)
+* Home Page: [http://victorpotasso.com/](http://www.victorpotasso.com)
+* Twitter: [@victorpotasso](https://twitter.com/victorpotasso)
 
 ## Installation
 
