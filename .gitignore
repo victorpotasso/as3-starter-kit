@@ -1,11 +1,43 @@
-# Build and Release Folders
-bin/
-bin-debug/
-bin-release/
+#OSX
 
-# Other files and folders
-.settings/
+.DS_Store
+.AppleDouble
+.LSOverride
 
-# Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
-# should NOT be excluded as they contain compiler settings and other important
-# information for Eclipse / Flash Builder.
+# Icon must end with two \r
+Icon
+
+
+# Thumbnails
+._*
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+#VIM
+
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+*.un~
+Session.vim
+.netrwhist
+*~
+
+#SASS
+
+.sass-cache
+
+#Grunt
+
+node_modules
+npm-debug.log
+tmp
+
