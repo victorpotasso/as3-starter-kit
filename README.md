@@ -16,7 +16,7 @@ Clone the git repo - `git clone git://github.com/victorpotasso/as3-starter-kit.g
 npm install
 ```
 
-## Getting Start
+## Getting Started
 
 After you've installed Grunt and ran `npm install` from the project, use `grunt watch` to watch for updates to your SASS, AS and JS files and Grunt will automatically re-build as you write your code.
 
