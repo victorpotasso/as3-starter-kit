@@ -2,7 +2,7 @@
 
 [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
 
-> AS3 Starter Kit is a starter kit. It will help you make better AS3 projects.
+> It's an awesome starter kit for AS3 projects. It will help you to structure projects with as3 quickly.
 
 * Source: [https://github.com/victorpotasso/as3-starter-kit](https://github.com/victorpotasso/as3-starter-kit)
 * Home Page: [http://victorpotasso.com/](http://www.victorpotasso.com)
