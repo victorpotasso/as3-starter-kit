@@ -141,22 +141,47 @@ module.exports = function(grunt)
 
         as3: {
             sdk : "<%= dir.flex_sdk %>",
+            
+            builds : {
+                preloader : {
+                    args : {
+                        "-debug": "true",
+                        "-target-player": "11.1",
+                        "-use-network": "true",
+                        "-static-link-runtime-shared-libraries": true,
+                        "-source-path" : "<%= dir.src.as %>classes"
+                    },
 
-            args : {
-                "-debug": "true",
-                "-target-player": "11.1",
-                "-use-network": "true",
-                "-static-link-runtime-shared-libraries": true,
-                "-source-path" : "<%= dir.src.as %>classes"
-            },
+                    libs : [
+                        "<%= dir.src.as %>libs/swc/assets/preloader.swc",
+                        "<%= dir.src.as %>libs/swc/third-party/bulkloader.r323.swc"
+                    ],
 
-            libs : [
-                "<%= dir.src.as %>libs/swc/assets/assets.swc",
-                "<%= dir.src.as %>libs/swc/third-party/greensock.swc"
-            ],
+                    files : {            
+                        "<%= dir.deploy.swf %>preloader.swf" : ["<%= dir.src.as %>classes/Preloader.as"]
+                    }
+                },
 
-            files : {            
-                "<%= dir.deploy.swf %>main.swf" : ["<%= dir.src.as %>classes/Main.as"]
+                main : {
+                    args : {
+                        "-debug": "true",
+                        "-target-player": "11.1",
+                        "-use-network": "true",
+                        "-static-link-runtime-shared-libraries": true,
+                        "-source-path" : "<%= dir.src.as %>classes"
+                    },
+
+                    libs : [
+                        "<%= dir.src.as %>libs/swc/assets/assets.swc",
+                        "<%= dir.src.as %>libs/swc/third-party/greensock.swc",
+                        "<%= dir.src.as %>libs/swc/third-party/Sweatless.swc"
+                    ],
+
+                    files : {            
+                        "<%= dir.deploy.swf %>main.swf" : ["<%= dir.src.as %>classes/Main.as"]
+                    }
+
+                }
             }
         },
     });

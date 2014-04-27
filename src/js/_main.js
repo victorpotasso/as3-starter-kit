@@ -4,7 +4,8 @@ $( document ).ready(function() {
 
 var flashvars =
 {
-    debug: "true"
+    debug: "true",
+    file: "assets/swf/main.swf"
 };
 
 var params = 
@@ -22,4 +23,4 @@ var attributes =
     allownetworking:'all' 
 };
 
-swfobject.embedSWF("assets/swf/main.swf?n="+parseInt(Math.random()*1000), "content_flash", "500", "500", "11.1", "", flashvars, params, attributes);
+swfobject.embedSWF("assets/swf/preloader.swf?n="+parseInt(Math.random()*1000), "content_flash", "500", "500", "11.1", "", flashvars, params, attributes);
