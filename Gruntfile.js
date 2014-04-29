@@ -144,13 +144,13 @@ module.exports = function(grunt)
             
             builds : {
                 preloader : {
-                    args : {
-                        "-debug": "true",
-                        "-target-player": "11.1",
-                        "-use-network": "true",
-                        "-static-link-runtime-shared-libraries": true,
-                        "-source-path" : "<%= dir.src.as %>classes"
-                    },
+                    args : [
+                        '-debug=true',
+                        '-target-player=11.1',
+                        '-use-network=true',
+                        '-static-link-runtime-shared-libraries=true',
+                        '-source-path=<%= dir.src.as %>classes'
+                    ],
 
                     libs : [
                         "<%= dir.src.as %>libs/swc/assets/preloader.swc",
@@ -163,13 +163,13 @@ module.exports = function(grunt)
                 },
 
                 main : {
-                    args : {
-                        "-debug": "true",
-                        "-target-player": "11.1",
-                        "-use-network": "true",
-                        "-static-link-runtime-shared-libraries": true,
-                        "-source-path" : "<%= dir.src.as %>classes"
-                    },
+                    args : [
+                        '-debug=true',
+                        '-target-player=11.1',
+                        '-use-network=true',
+                        '-static-link-runtime-shared-libraries=true',
+                        '-source-path=<%= dir.src.as %>classes'
+                    ],
 
                     libs : [
                         "<%= dir.src.as %>libs/swc/assets/assets.swc",
