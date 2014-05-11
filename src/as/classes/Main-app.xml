@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<application xmlns="http://ns.adobe.com/air/application/13.0">
+	<versionNumber>0.1.0</versionNumber>
+	<versionLabel>as3starterkit</versionLabel>
+
+	<id>br.victorpotasso.as3starterkit</id>
+	<copyright>http://victorpotasso.com</copyright>
+	
+	<!-- <extensions>
+    	    <extensionID>com.adobe.Vibration</extensionID>
+        </extensions> -->
+
+	<filename>as3starterkit</filename>
+	<name>as3starterkit</name>
+
+	<initialWindow>
+	
+            <content>./deploy/web/assets/swf/main.swf</content>
+
+            <depthAndStencil>true</depthAndStencil>
+            <!-- (true or false)-->		
+            
+            <softKeyboardBehavior>pan</softKeyboardBehavior>            
+            <!-- ("pan" or "none") -->        
+
+            <systemChrome>standard</systemChrome>
+            <transparent>false</transparent>
+            <visible>true</visible>
+            <autoOrients>true</autoOrients>
+            <fullScreen>true</fullScreen>
+
+            <aspectRatio>landscape</aspectRatio>            
+            <!-- ("portrait" or "landscape") -->
+            
+            <renderMode>direct</renderMode>
+            <!-- (auto, cpu, gpu, or direct)-->
+
+        </initialWindow>
+
+	<supportedProfiles>desktop extendedDesktop mobileDevice extendedMobileDevice</supportedProfiles>
+
+	<customUpdateUI>false</customUpdateUI>
+	<allowBrowserInvocation>false</allowBrowserInvocation>
+	
+	<icon>
+            <image36x36>icons/icon36.png</image36x36>
+            <image48x48>icons/icon48.png</image48x48>
+            <image72x72>icons/icon72.png</image72x72>
+	</icon>
+
+        <!-- Android -->
+
+        <android>
+
+            <manifestAdditions>
+		<![CDATA[
+                    <manifest android:installLocation="auto">
+                        <uses-permission android:name="android.permission.VIBRATE"/>
+                        <uses-permission android:name="android.permission.INTERNET"/>
+                        <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+                        <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+                        <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION"/>
+                        <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+                        <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+                        <uses-permission android:name="android.permission.WRITE_GSERVICES"/>
+                        <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+                        
+                        <uses-configuration android:reqFiveWayNav="true"/>
+                        <uses-feature android:required="true" android:name="android.hardware.touchscreen.multitouch"/>
+                        
+                        <supports-screens android:normalScreens="true"/>
+
+                        <application android:enabled="true" android:debuggable="true">
+                          
+                            <activity android:excludeFromRecents="false">
+                                <intent-filter>
+                                        <action android:name="android.intent.action.MAIN"/>
+                                        <category android:name="android.intent.category.LAUNCHER"/>
+                                </intent-filter>
+                            </activity>
+                        </application>
+                    </manifest>
+                ]]>
+	    </manifestAdditions> 
+        
+            <colorDepth>32bit</colorDepth>
+    
+        </android>
+
+        <!-- iPhone -->
+        
+        <iPhone>
+
+            <InfoAdditions>
+                <![CDATA[
+                    <key>UIRequiredDeviceCapabilities</key>
+                    <array>
+                        <string>gps</string>
+                        <string>armv7</string>
+                        <string>armv6</string>
+                        <string>telephony</string>
+                        <string>wifi</string>
+                        <string>location-services</string> 
+                    </array>
+                                    
+                    <key>UIPrerenderedIcon</key> 
+                    <string>YES</string>
+            
+                    <key>UIApplicationExitsOnSuspend</key>
+                    <string>YES</string>
+
+                    <key>UIStatusBarStyle</key> 
+                    <string>UIStatusBarStyleBlackOpaque</string> 
+
+                    <key>UIRequiresPersistentWiFi</key> 
+                    <string>YES</string>
+                    
+                    <key>UIDeviceFamily</key> 
+                    <array> 
+                        <string>1</string> 
+                        <string>2</string> 
+                    </array> 
+                ]]>
+            </InfoAdditions>
+        
+            <requestedDisplayResolution>high</requestedDisplayResolution>
+
+        </iPhone>
+
+</application>

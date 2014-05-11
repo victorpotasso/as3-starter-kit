@@ -8,8 +8,8 @@ package
     import br.com.stimuli.loading.BulkLoader;
     import br.com.stimuli.loading.BulkProgressEvent;
     
-    import victorpotasso.objects.Bundle;
-    import victorpotasso.assets.APreloader;
+    import br.victorpotasso.as3starterkit.objects.Bundle;
+    import br.victorpotasso.as3starterkit.assets.APreloader;
 
     [SWF(width=500, height=500, backgroundColor='#FFFFFF', frameRate=30)]
     public class Preloader extends Sprite

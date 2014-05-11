@@ -7,7 +7,7 @@
     import com.greensock.TweenMax;
     import com.greensock.easing.Elastic;
     
-    import victorpotasso.assets.AWelcome; 
+    import br.victorpotasso.as3starterkit.assets.AWelcome; 
 
     import sweatless.graphics.SmartCircle;
 
